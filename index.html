@@ -1,93 +1,1298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
+<title>Test</title>
 
-	<title>Anything Zoomer | Calendar</title>
+<style type="text/css">
+.messageBox {  
+width:150px;  
+padding:10px;  
+border:1px solid #666;  
+position:fixed; rightright:2%;  
+top:2%;  
+z-index:999;  
+-webkit-border-radius: 6px; -moz-border-radius: 6px;} 
 
-	<!--<link href="http://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">-->
-	<link rel="stylesheet" href="demo/style.css">
-	<link rel="stylesheet" href="css/anythingzoomer.css">
 
-	<script src="jquery.min.js"></script>
-	<script src="js/jquery.anythingzoomer.js"></script>
-	<script>
-	$(function() {
+.msg1 {  
 
-		$("#zoom").anythingZoomer();
+padding:10px;  
+border:1px solid #666;  
+width:200px;
+ position:fixed;
+    top: 50%;
+    left: 35%;
+z-index:999;  
 
-		$('a.aug26').bind('mouseenter click', function(){
-			// day class with rel of date; it also finds the date in the large calendar,
-			// but only the first class name is targetted
-			$('#zoom').anythingZoomer('.day[rel=2009-08-26]', '', [100,100]);
-			return false;
-		});
+  background-image: -webkit-linear-gradient(top, #3498db, #000);
+  background-image: -moz-linear-gradient(top, #3498db, #000);
+  background-image: -ms-linear-gradient(top, #3498db, #000);
+  background-image: -o-linear-gradient(top, #3498db, #000);
+  background-image: linear-gradient(to bottom, #3498db, #000);
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  color:#fff;
+  font-size:15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+ }
 
-		$('a.week26').bind('mouseenter click', function(){
-			// '.selector', [xOffset, yOffset], [ zoomX, zoomY]
-			// offset can be '' (defaults to zero), or [x] defines only the x offset, or [x,y] defines both the x and y offset
-			// zoom size defaults to css size
-			$('#zoom').anythingZoomer('.day[rel=2009-08-26]', [-2, 1], [200, 35]);
-			return false;
-		});
+</style>
 
-		$('a.jul').bind('mouseenter click', function(){
-			// '.selector', [xOffset, yOffset], [ zoomX, zoomY]
-			$('#zoom').anythingZoomer('td.single-month:eq(0)', [-10, -20], [210, 210]);
-			return false;
-		});
+<script src="js/jquery-latest.js"></script>  
+  
+<script>  
 
-	});
-	</script>
+$(document).ready(function(){  
+/*setTimeout(function() {  
+$('.messageBox').fadeOut('slow');  
+}, 1000); // <-- time in milliseconds  
+*/
+$().toastmessage('showSuccessToast', 'Swipe UP or Click to Open Ganga Hospital Score ');
+}); 
 
-</head>
 
-<body id="calendar">
+</script>  
 
-<div id="main-content">
 
-	<h1>AnythingZoomer<sup>2</sup></h1>
 
+
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/idangerous.swiper.scrollbar.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/simple-app.css">
+<script src="jquery-1.8.2.min.js"></script>
+<script>
+       $(document).on('pagebeforeshow', '#second', function(e, data){     
+   
+});
+
+
+
+</script>
+
+<!-- Toast message -->
+
+<link rel="stylesheet" href="css/jquery.toastmessage.css">
+<script src="js/jquery.toastmessage.js"></script>
+
+<script type="text/javascript">
+
+
+        $(document).ready(function() {
+			jQuery('body').css('overflow','hidden'); 
+			
+            $('#s1').click(function() {
+             $('#skinscore').val(1);
+
+			$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+
+			 
+            });
+			 $('#s2').click(function() {
+             $('#skinscore').val(2);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#s3').click(function() {
+             $('#skinscore').val(3);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#s4').click(function() {
+             $('#skinscore').val(4);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#s5').click(function() {
+             $('#skinscore').val(5);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+            
+            
+            
+            $('#m1').click(function() {
+             $('#mtnscore').val(1);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+			 $('#m1').css("cursor","pointer");
+			 
+            });
+			 $('#m2').click(function() {
+             $('#mtnscore').val(2);
+			 $('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#m3').click(function() {
+             $('#mtnscore').val(3);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#m4').click(function() {
+             $('#mtnscore').val(4);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#m5').click(function() {
+             $('#mtnscore').val(5);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+            
+            
+            
+            
+             $('#b1').click(function() {
+             $('#bjcore').val(1);
+			 
+			 $('#b1').css("cursor","pointer");
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+			 
+            });
+			 $('#b2').click(function() {
+             $('#bjcore').val(2);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#b3').click(function() {
+             $('#bjcore').val(3);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#b4').click(function() {
+             $('#bjcore').val(4);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+			 $('#b5').click(function() {
+             $('#bjcore').val(5);
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+            });
+            
+            
+            
+            
+            
+            
+			 $('#t').click(function() {
+				   $('#cmsscore').val(0);
+				 $("#skincore").val(0);
+				 $("#mtnscore").val(0);
+				  $("#bjcore").val(0);
+				   //$("input[type='checkbox']").removeAttr('checked');
+				   $("#UnCheckIt").click(function () {
+ 	
+	$('input:checkbox[name=checkme]').attr('checked',false);
+ 
+    });	
+
+           
+            });
+			
+			
+			$('#exit').click(function() {
+              $('#cmsscore').val(0);
+			
+			window.history.go(-1);
+						
+			 });
+			 
+			
+			 $('.check:button').toggle(function(){
+        $('#chk1').attr('checked','checked');
+        $(this).val('uncheck all')
+    },function(){
+        $('input:checkbox').removeAttr('checked');
+        $(this).val('check all');        
+    })
+			
+			 
+			  
+			 $('#home').click(function() {
+				
+						
+				  $('#cmsscore').val(0);
+				 $("#skincore").val('0');
+				 $("#mtnscore").val('0');
+				  $("#bjcore").val('0');
+								 
+							
+				
+			 });
+			  $('#six').click(function() {
+				var cmsscorevalue= $("#cmsscore").val();
+				 var skincorevalue= $("#skinscore").val();
+				var mtnscorevalue= $("#mtnscore").val();
+			    var bjcorevalue= $("#bjcore").val();
+				 $("#skinscorevalue").val(skincorevalue);
+				 $("#mtnscorevalue").val(mtnscorevalue);
+				 $("#bjscorevalue").val(bjcorevalue);
+				 $("#cmsscorevalue").val(cmsscorevalue);
+				 
+				 var finaltotal = parseInt(skincorevalue)+parseInt(mtnscorevalue)+parseInt(bjcorevalue)+parseInt(cmsscorevalue)
+					$("#FinalScorevalue").html(finaltotal);
+					$("label[for='myalue']").html(finaltotal);
+					if(finaltotal<14)	
+					//alert("Score<14:Limb Salvage");
+					$().toastmessage('showSuccessToast', 'Score<14:Limb Salvage');				
+					else if(finaltotal>=14 & finaltotal<=16)
+					//alert ("Score between 14 to 16 :Grey Zone, Salvage if good Facilities");
+					$().toastmessage('showSuccessToast', 'Score between 14 to 16 :Grey Zone, Salvage if good Facilities');
+					else
+						//setTimeout(alert('Score>17 : Amputation').fadeOut(1500));
+						$().toastmessage('showSuccessToast', 'Score>17 : Amputation'); 
+				
+  						
+				
+			 });
+			 
+			 
+			 
+			 function fntrig()
+			 {
+				 alert("Score>17 : Amputation");
+			 }
+			 
+			 
+			  
+			   var cms=0;
+			   var cms1=0;
+			   var total=0;
+			   
+			 $('#chk1').click(function(){
+				 $('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+				 
+				 
+        var isChecked = $('#chk1').is(':checked');
+		var value = $("#cmsscore").val();
+        if(isChecked)
+		{
+		 var value = $("#cmsscore").val();
+		 cms=parseInt(value)+2;
+		 
+		  $('#cmsscore').val(cms);
+		
+         //$('p').html('Checkbox is checked: <b>True</b>');
+		 
+		}
+        else
+		{
+			 var value = $("#cmsscore").val();
+			 cms=parseInt(value)-parseInt('2');
+		 
+		 	 $('#cmsscore').val(cms);
+				
+		}
+		
+      });
+	  
+	   $('#chk2').click(function(){
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+        var isChecked = $('#chk2').is(':checked');
+		var value = $("#cmsscore").val();
+        if(isChecked)
+		{
+		 var value = $("#cmsscore").val();
+		 cms=parseInt(value)+2;
+		 
+		  $('#cmsscore').val(cms);
+		
+         //$('p').html('Checkbox is checked: <b>True</b>');
+		
+		}
+        else
+		{
+			 var value = $("#cmsscore").val();
+			 cms=parseInt(value)-parseInt('2');
+		 
+		 	 $('#cmsscore').val(cms);
+				
+		}
+		
+      });
+	  
+	  
+	  
+	  $('#chk3').click(function(){
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+        var isChecked = $('#chk3').is(':checked');
+		var value = $("#cmsscore").val();
+        if(isChecked)
+		{
+		 var value = $("#cmsscore").val();
+		 cms=parseInt(value)+2;
+		 
+		  $('#cmsscore').val(cms);
+		
+         //$('p').html('Checkbox is checked: <b>True</b>');
+		 
+		}
+        else
+		{
+			 var value = $("#cmsscore").val();
+			 cms=parseInt(value)-parseInt('2');
+		 
+		 	 $('#cmsscore').val(cms);
+				
+		}
+		
+      });
+	  
+	  
+	  $('#chk4').click(function(){
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+        var isChecked = $('#chk4').is(':checked');
+		var value = $("#cmsscore").val();
+        if(isChecked)
+		{
+		 var value = $("#cmsscore").val();
+		 cms=parseInt(value)+2;
+		 
+		  $('#cmsscore').val(cms);
+		
+         //$('p').html('Checkbox is checked: <b>True</b>');
+		 
+		}
+        else
+		{
+			 var value = $("#cmsscore").val();
+			 cms=parseInt(value)-parseInt('2');
+		 
+		 	 $('#cmsscore').val(cms);
+				
+		}
+		
+      });
+	  
+	  
+	  $('#chk5').click(function(){
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+        var isChecked = $('#chk5').is(':checked');
+		var value = $("#cmsscore").val();
+        if(isChecked)
+		{
+		 var value = $("#cmsscore").val();
+		 cms=parseInt(value)+2;
+		 
+		  $('#cmsscore').val(cms);
+		
+         //$('p').html('Checkbox is checked: <b>True</b>');
+		 
+		}
+        else
+		{
+			 var value = $("#cmsscore").val();
+			 cms=parseInt(value)-parseInt('2');
+		 
+		 	 $('#cmsscore').val(cms);
+				
+		}
+		
+      });
+	  
+	  $('#chk6').click(function(){
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+        var isChecked = $('#chk6').is(':checked');
+		var value = $("#cmsscore").val();
+        if(isChecked)
+		{
+		 var value = $("#cmsscore").val();
+		 cms=parseInt(value)+2;
+		 
+		  $('#cmsscore').val(cms);
+		
+         //$('p').html('Checkbox is checked: <b>True</b>');
+		 
+		}
+        else
+		{
+			 var value = $("#cmsscore").val();
+			 cms=parseInt(value)-parseInt('2');
+		 
+		 	 $('#cmsscore').val(cms);
+				
+		}
+		
+      });
+			
+			 $('#chk7').click(function(){
+$('.msg1').css("display","block");
+			 setTimeout(function() {  
+				$('.msg1').fadeOut('slow');  
+				}, 1000); // <-- time in milliseconds
+        var isChecked = $('#chk7').is(':checked');
+		var value = $("#cmsscore").val();
+        if(isChecked)
+		{
+		 var value = $("#cmsscore").val();
+		 cms=parseInt(value)+2;
+		 
+		  $('#cmsscore').val(cms);
+		
+         //$('p').html('Checkbox is checked: <b>True</b>');
+		 
+		}
+        else
+		{
+			 var value = $("#cmsscore").val();
+			 cms=parseInt(value)-parseInt('2');
+		 
+		 	 $('#cmsscore').val(cms);
+				
+		}
+		
+      });
+			 	
+			
+        });     
+    </script>
+<script type="text/javascript">
+var checkflag = "false";
+function check(field) {
+  if (checkflag == "false") {
+    for (i = 0; i < field.length; i++) {
+      field[i].checked = true;
+    }
+    checkflag = "true";
+    return "Uncheck All";
+  } else {
+    for (i = 0; i < field.length; i++) {
+      field[i].checked = false;
+    }
+    checkflag = "false";
+    return "Check All";
+  }
+}
+
+</script>
+<script lang="javascript">
+	
+		
+    function close_window() {
+    if (confirm("Exit?")) {
+    
+		exit();
+	
+    	}
+			
+	}
+	
+	function bgExitHandler(e) {
+    Enabler.exit('Background Exit');
+}
+</script>
+
+
+
+<style type="text/css">
+.bgcolor {
+	background: rgb(235,233,249); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(235,233,249,1)), color-stop(50%, rgba(216,208,239,1)), color-stop(51%, rgba(206,199,236,1)), color-stop(100%, rgba(193,191,234,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=0 ); /* IE6-9 */
+}
+</style>
+<script>
+		$(document).ready(function() {
+		  $('.nav-toggle').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');					
+            $("#img").css("display","none");
+
+ 
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Show');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Hide');
+			  }
+			});
+		  });
+		  
+		   $('#img').click(function(){
+			   
+			   $("#img").css("display","none");
+			   
+			  			   
+		   });
+		  
+ 
+		});	
+		
+		</script>
+<style>
+.round-border {
+	border: 1px solid #000;
 	
 
-	<ul id="nav">
-		<li><a class="current" href="index.html">Calendar</a></li>
-		<li><a href="image.html">Image</a></li>
-		<li><a href="swap.html">Swap</a></li>
-		<li><a href="text.html">Text</a></li>
-		<li><a href="double.html">Double</a></li>
-		<li><a class="use" href="use.html">Usage</a></li>
-		<li><a class="play" href="http://jsfiddle.net/Mottie/6sp2b/">Playground</a></li>
-		<li><a class="issue" href="https://github.com/CSS-Tricks/AnythingZoomer/issues">Issues</a></li>
-	</ul>
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.mainbg {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+tr {
+	cursor: pointer;
+	padding:5px;
+}
 
-	<h2>Calendar Demo</h2>
+.bg {
+	background: url(bg3.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+input[type="text"], textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3) inset, 0px 1px 0px rgba(255, 255, 255, 0.2);
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 9px 10px;
+	width: 100%;
+}
+.border
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3) inset, 0px 1px 0px rgba(255, 255, 255, 0.2);
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 9px 10px;
+	width: 100%;
+}
 
-	<p>
-		<ul class="info">
-			<li>Mouse over the calendar to see the zoom window.</li>
-			<li>Double click anywhere on the calendar to toggle between the large and small versions.</li>
-		</ul>
-	</p>
 
-	<p>Target <a href="#" class="aug26">August 26</a>, the <a href="#" class="week26">week of Aug 26</a>, or the whole month of <a href="#" class="jul">July</a>.</p>
+</style>
+<SCRIPT LANGUAGE="JavaScript">
 
-	<hr>
+function showBoxes(frm){
+   var message = "Your chose:\n\n"
 
-	<div id="zoom" class="cal">
-		<div class="small">
-			<table class="months-tables"><tbody><tr><td class="single-month"><table class="calendar"><caption>July 2009</caption><tbody><tr><th class="header">S</th><th class="header">M</th><th class="header">T</th><th class="header">W</th><th class="header">T</th><th class="header">F</th><th class="header">S</th></tr><tr><td colspan="3"> </td><td rel="2009-07-01" class="day past-day"> </td><td rel="2009-07-02" class="day past-day"> </td><td rel="2009-07-03" class="day past-day"> </td><td rel="2009-07-04" class="day past-day"> </td></tr><tr><td rel="2009-07-05" class="day past-day"> </td><td rel="2009-07-06" class="day past-day"> </td><td rel="2009-07-07" class="day past-day"> </td><td rel="2009-07-08" class="day past-day"> </td><td rel="2009-07-09" class="day past-day"> </td><td rel="2009-07-10" class="day past-day"> </td><td rel="2009-07-11" class="day past-day"> </td></tr><tr><td rel="2009-07-12" class="day past-day"> </td><td rel="2009-07-13" class="day past-day"> </td><td rel="2009-07-14" class="day past-day"> </td><td rel="2009-07-15" class="day" style="padding: 0px;"><a style="background: rgb(34, 34, 34)" href="#?time=7:30 pm" title="Today’s Show - 7:30 pm"> </a></td><td rel="2009-07-16" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=533" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-17" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=534" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-18" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=535" title=" 7:30 pm - Show Time"> </a></td></tr><tr><td rel="2009-07-19" class="day"> </td><td rel="2009-07-20" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=536" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-21" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=537" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-22" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=538" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-23" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=524" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-24" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=539" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-25" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=540" title=" 7:30 pm - Show Time"> </a></td></tr><tr><td rel="2009-07-26" class="day"> </td><td rel="2009-07-27" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=541" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-28" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=542" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-29" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=543" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-30" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=544" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-07-31" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=545" title=" 7:30 pm - Show Time"> </a></td><td colspan="1"> </td></tr></tbody></table></td><td class="single-month"><table class="calendar"><caption>August 2009</caption><tbody><tr><th class="header">S</th><th class="header">M</th><th class="header">T</th><th class="header">W</th><th class="header">T</th><th class="header">F</th><th class="header">S</th></tr><tr><td colspan="6"> </td><td rel="2009-08-01" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=523" title=" 7:30 pm - Show Time"> </a></td></tr><tr><td rel="2009-08-02" class="day"> </td><td rel="2009-08-03" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=548" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-04" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=549" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-05" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=550" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-06" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=551" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-07" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=552" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-08" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=553" title=" 7:30 pm - Show Time"> </a></td></tr><tr><td rel="2009-08-09" class="day"> </td><td rel="2009-08-10" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=554" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-11" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=555" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-12" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=556" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-13" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=557" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-14" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=558" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-15" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=559" title=" 7:30 pm - Show Time"> </a></td></tr><tr><td rel="2009-08-16" class="day"> </td><td rel="2009-08-17" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=560" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-18" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=561" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-19" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=562" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-20" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=563" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-21" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=564" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-22" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=565" title=" 7:30 pm - Show Time"> </a></td></tr><tr><td rel="2009-08-23" class="day"> </td><td rel="2009-08-24" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=566" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-25" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=567" title=" 7:30 pm - Show Time"> </a></td><td rel="2009-08-26" class="day" style="padding: 0px;"><a style="background: rgb(17, 188, 27)" href="#?id=568" title=" 2:00 pm - Show Time"> </a></td><td rel="2009-08-27" class="day"> </td><td rel="2009-08-28" class="day"> </td><td rel="2009-08-29" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=569" title=" 7:30 pm - Show Time"> </a></td></tr><tr><td rel="2009-08-30" class="day"> </td><td rel="2009-08-31" class="day"> </td><td colspan="5"> </td></tr></tbody></table></td><td class="single-month"><table class="calendar"><caption>September 2009</caption><tbody><tr><th class="header">S</th><th class="header">M</th><th class="header">T</th><th class="header">W</th><th class="header">T</th><th class="header">F</th><th class="header">S</th></tr><tr><td colspan="2"> </td><td rel="2009-09-01" class="day"> </td><td rel="2009-09-02" class="day"> </td><td rel="2009-09-03" class="day"> </td><td rel="2009-09-04" class="day"> </td><td rel="2009-09-05" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=573" title=" 7:00 pm - Show Time"> </a></td></tr><tr><td rel="2009-09-06" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=574" title=" 7:00 pm - Show Time"> </a></td><td rel="2009-09-07" class="day"> </td><td rel="2009-09-08" class="day"> </td><td rel="2009-09-09" class="day"> </td><td rel="2009-09-10" class="day"> </td><td rel="2009-09-11" class="day"> </td><td rel="2009-09-12" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=575" title=" 7:00 pm - Show Time"> </a></td></tr><tr><td rel="2009-09-13" class="day"> </td><td rel="2009-09-14" class="day"> </td><td rel="2009-09-15" class="day"> </td><td rel="2009-09-16" class="day"> </td><td rel="2009-09-17" class="day"> </td><td rel="2009-09-18" class="day"> </td><td rel="2009-09-19" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=576" title=" 7:00 pm - Show Time"> </a></td></tr><tr><td rel="2009-09-20" class="day"> </td><td rel="2009-09-21" class="day"> </td><td rel="2009-09-22" class="day"> </td><td rel="2009-09-23" class="day"> </td><td rel="2009-09-24" class="day"> </td><td rel="2009-09-25" class="day"> </td><td rel="2009-09-26" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=577" title=" 7:00 pm - Show Time"> </a></td></tr><tr><td rel="2009-09-27" class="day"> </td><td rel="2009-09-28" class="day"> </td><td rel="2009-09-29" class="day"> </td><td rel="2009-09-30" class="day"> </td><td colspan="3"> </td></tr></tbody></table></td></tr></tbody></table>
-		</div>
+   //For each checkbox see if it has been checked, record the value.
+   for (i = 0; i < frm.cms.length; i++)
+      if (frm.Music[i].checked){
+         message = message + frm.Music[i].value + "\n"
+      }
 
-		<div class="large">
-			<table class="months-tables"><tbody><tr><td class="single-month"><table class="calendar"><caption>July 2009</caption><tbody><tr><th class="header">S</th><th class="header">M</th><th class="header">T</th><th class="header">W</th><th class="header">T</th><th class="header">F</th><th class="header">S</th></tr><tr><td colspan="3"> </td><td rel="2009-07-01" class="day past-day"><strike>1</strike></td><td rel="2009-07-02" class="day past-day"><strike>2</strike></td><td rel="2009-07-03" class="day past-day"><strike>3</strike></td><td rel="2009-07-04" class="day past-day"><strike>4</strike></td></tr><tr><td rel="2009-07-05" class="day past-day"><strike>5</strike></td><td rel="2009-07-06" class="day past-day"><strike>6</strike></td><td rel="2009-07-07" class="day past-day"><strike>7</strike></td><td rel="2009-07-08" class="day past-day"><strike>8</strike></td><td rel="2009-07-09" class="day past-day"><strike>9</strike></td><td rel="2009-07-10" class="day past-day"><strike>10</strike></td><td rel="2009-07-11" class="day past-day"><strike>11</strike></td></tr><tr><td rel="2009-07-12" class="day past-day"><strike>12</strike></td><td rel="2009-07-13" class="day past-day"><strike>13</strike></td><td rel="2009-07-14" class="day past-day"><strike>14</strike></td><td rel="2009-07-15" class="day" style="padding: 0px;"><a style="background: rgb(34, 34, 34)" href="todaysshow.php?time=7:30 pm" title="Today’s Show - 7:30 pm">15</a></td><td rel="2009-07-16" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=533" title=" 7:30 pm - Show Time">16</a></td><td rel="2009-07-17" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=534" title=" 7:30 pm - Show Time">17</a></td><td rel="2009-07-18" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=535" title=" 7:30 pm - Show Time">18</a></td></tr><tr><td rel="2009-07-19" class="day">19</td><td rel="2009-07-20" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=536" title=" 7:30 pm - Show Time">20</a></td><td rel="2009-07-21" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=537" title=" 7:30 pm - Show Time">21</a></td><td rel="2009-07-22" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=538" title=" 7:30 pm - Show Time">22</a></td><td rel="2009-07-23" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=524" title=" 7:30 pm - Show Time">23</a></td><td rel="2009-07-24" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=539" title=" 7:30 pm - Show Time">24</a></td><td rel="2009-07-25" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=540" title=" 7:30 pm - Show Time">25</a></td></tr><tr><td rel="2009-07-26" class="day">26</td><td rel="2009-07-27" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=541" title=" 7:30 pm - Show Time">27</a></td><td rel="2009-07-28" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=542" title=" 7:30 pm - Show Time">28</a></td><td rel="2009-07-29" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=543" title=" 7:30 pm - Show Time">29</a></td><td rel="2009-07-30" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=544" title=" 7:30 pm - Show Time">30</a></td><td rel="2009-07-31" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=545" title=" 7:30 pm - Show Time">31</a></td><td colspan="1"> </td></tr></tbody></table></td><td class="single-month"><table class="calendar"><caption>August 2009</caption><tbody><tr><th class="header">S</th><th class="header">M</th><th class="header">T</th><th class="header">W</th><th class="header">T</th><th class="header">F</th><th class="header">S</th></tr><tr><td colspan="6"> </td><td rel="2009-08-01" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=523" title=" 7:30 pm - Show Time">1</a></td></tr><tr><td rel="2009-08-02" class="day">2</td><td rel="2009-08-03" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=548" title=" 7:30 pm - Show Time">3</a></td><td rel="2009-08-04" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=549" title=" 7:30 pm - Show Time">4</a></td><td rel="2009-08-05" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=550" title=" 7:30 pm - Show Time">5</a></td><td rel="2009-08-06" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=551" title=" 7:30 pm - Show Time">6</a></td><td rel="2009-08-07" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=552" title=" 7:30 pm - Show Time">7</a></td><td rel="2009-08-08" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=553" title=" 7:30 pm - Show Time">8</a></td></tr><tr><td rel="2009-08-09" class="day">9</td><td rel="2009-08-10" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=554" title=" 7:30 pm - Show Time">10</a></td><td rel="2009-08-11" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=555" title=" 7:30 pm - Show Time">11</a></td><td rel="2009-08-12" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=556" title=" 7:30 pm - Show Time">12</a></td><td rel="2009-08-13" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=557" title=" 7:30 pm - Show Time">13</a></td><td rel="2009-08-14" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=558" title=" 7:30 pm - Show Time">14</a></td><td rel="2009-08-15" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=559" title=" 7:30 pm - Show Time">15</a></td></tr><tr><td rel="2009-08-16" class="day">16</td><td rel="2009-08-17" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=560" title=" 7:30 pm - Show Time">17</a></td><td rel="2009-08-18" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=561" title=" 7:30 pm - Show Time">18</a></td><td rel="2009-08-19" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=562" title=" 7:30 pm - Show Time">19</a></td><td rel="2009-08-20" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=563" title=" 7:30 pm - Show Time">20</a></td><td rel="2009-08-21" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=564" title=" 7:30 pm - Show Time">21</a></td><td rel="2009-08-22" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=565" title=" 7:30 pm - Show Time">22</a></td></tr><tr><td rel="2009-08-23" class="day">23</td><td rel="2009-08-24" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=566" title=" 7:30 pm - Show Time">24</a></td><td rel="2009-08-25" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=567" title=" 7:30 pm - Show Time">25</a></td><td rel="2009-08-26" class="day" style="padding: 0px;"><a style="background: rgb(17, 188, 27)" href="#?id=568" title=" 2:00 pm - Show Time">26</a></td><td rel="2009-08-27" class="day">27</td><td rel="2009-08-28" class="day">28</td><td rel="2009-08-29" class="day" style="padding: 0px;"><a style="background: rgb(111, 0, 159)" href="#?id=569" title=" 7:30 pm - Show Time">29</a></td></tr><tr><td rel="2009-08-30" class="day">30</td><td rel="2009-08-31" class="day">31</td><td colspan="5"> </td></tr></tbody></table></td><td class="single-month"><table class="calendar"><caption>September 2009</caption><tbody><tr><th class="header">S</th><th class="header">M</th><th class="header">T</th><th class="header">W</th><th class="header">T</th><th class="header">F</th><th class="header">S</th></tr><tr><td colspan="2"> </td><td rel="2009-09-01" class="day">1</td><td rel="2009-09-02" class="day">2</td><td rel="2009-09-03" class="day">3</td><td rel="2009-09-04" class="day">4</td><td rel="2009-09-05" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=573" title=" 7:00 pm - Show Time">5</a></td></tr><tr><td rel="2009-09-06" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=574" title=" 7:00 pm - Show Time">6</a></td><td rel="2009-09-07" class="day">7</td><td rel="2009-09-08" class="day">8</td><td rel="2009-09-09" class="day">9</td><td rel="2009-09-10" class="day">10</td><td rel="2009-09-11" class="day">11</td><td rel="2009-09-12" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=575" title=" 7:00 pm - Show Time">12</a></td></tr><tr><td rel="2009-09-13" class="day">13</td><td rel="2009-09-14" class="day">14</td><td rel="2009-09-15" class="day">15</td><td rel="2009-09-16" class="day">16</td><td rel="2009-09-17" class="day">17</td><td rel="2009-09-18" class="day">18</td><td rel="2009-09-19" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=576" title=" 7:00 pm - Show Time">19</a></td></tr><tr><td rel="2009-09-20" class="day">20</td><td rel="2009-09-21" class="day">21</td><td rel="2009-09-22" class="day">22</td><td rel="2009-09-23" class="day">23</td><td rel="2009-09-24" class="day">24</td><td rel="2009-09-25" class="day">25</td><td rel="2009-09-26" class="day" style="padding: 0px;"><a style="background: rgb(187, 121, 2)" href="#?id=577" title=" 7:00 pm - Show Time">26</a></td></tr><tr><td rel="2009-09-27" class="day">27</td><td rel="2009-09-28" class="day">28</td><td rel="2009-09-29" class="day">29</td><td rel="2009-09-30" class="day">30</td><td colspan="3"> </td></tr></tbody></table></td></tr></tbody></table>
-		</div>
+   //For each radio button if it is checked get the value and break.
+   for (var i = 0; i < frm.Performer.length; i++){
+      if (frm.Performer[i].checked){
+         message = message + "\n" + frm.Performer[i].value
+         break
+      }
+   }
+   alert(message)
+}
 
-	</div>
 
+</SCRIPT>
+
+
+
+
+
+
+
+</head>
+<body>
+<div id="show">
+<div align="center" style="color:#000; display:none" class="messageBox">Swipe or click to open</div>  
+
+      
+
+<div  class="swiper-nav swiper-container">
+	
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><span>Covering Tissues</span></div>
+    <div class="swiper-slide"><span>Musculo-Tendinous,Nerve</span></div>
+    <div class="swiper-slide"><span>Bone and Joints</span></div>
+    <div class="swiper-slide"><span>Co-morbid Factors</span></div>
+    <div class="swiper-slide"><span>Final Score</span></div>
+    
+  </div>
 </div>
 
-</body>
+<div  style="background-color:#FFF; color:#000" class="swiper-pages swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div>
+        <table style="width:100%">
+          <tr>
+            <td align="center" valign="middle" colspan="2" style="width:90%"><h3>Covering Tissues (skin and fascia) Score</h3>
+            <div align="center" style="display:none" class="msg1">Swipe to Next/Prev Screen</div>  
+            </td>
+            <td style="width:10%"><input type="text"  readonly="true"  style="text-align:center;" value="0" id="skinscore"/>
+              &nbsp; </td>
+          </tr>
+          <tr>
+            <td colspan="3"><hr /></td>
+          </tr>
+          <tr>
+            <td align="left" style="padding-left:20px" valign="middle"> Example </td>
+            <td align="center" valign="middle"> Description </td>
+            <td align="center" valign="middle"> Score </td>
+          </tr>
+          <tr>
+            <td colspan="3"><hr /></td>
+          </tr>
+        </table>
+      </div>
+      <div class="swiper-container scroll-container">
 
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="page-inner">
+
+              <table align="center">
+                <tr>
+                  <td><table  width="100%">
+                      <tr class="border">
+                        <td >
+                        <a href="leg1b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="leg1ic.png" alt="skin1" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top">
+                        <p style="cursor:pointer; text-align:justify; margin:0; padding-top::0; padding-left:10px; padding-right:10px;">
+                        <label for="s1">Wounds not present over the bone, which have adequate soft tissue bed and can be sutured without tension.</label> </p>
+
+                        </td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="1" id="skin1"/>                         
+                          &nbsp;
+                          <br>
+							<input id="s1" type="radio" name="skinradio">
+                          </td>
+                      </tr>
+                      <tr class="border" >
+                        <td>
+                         <a href="leg2b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="leg2ic.png" alt="skin2" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; text-align:justify; margin:0; padding:0;padding-left:10px; padding-right:10px;" > <label for="s2">Wounds not present over the bone but with primary skin loss or requiring excision of skin during debridement, requiring skin grafting only, wound not affecting the choice of fixation of the bone</label>.</p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="2" id="skin2"/>
+                          &nbsp;
+                         <br>
+							<input id="s2" type="radio" name="skinradio">
+                          </td>
+                      </tr>
+                      <tr class="border">
+                        <td>
+                         <a href="leg3b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="leg3ic.png" alt="skin3" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; text-align:justify; margin:0; padding:0;padding-left:10px; padding-right:10px;"> <label for="s3">Wounds situated over the bone and directly exposing the skeleton but without skin loss either by injury or during debridement, could be sutured primarily or secondarily, choice of bony stabilization had to be frequently modified.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="3" id="skin3"/>
+                          &nbsp;
+                          <br>
+							<input id="s3" type="radio" name="skinradio">
+                          </td>
+                      </tr>
+                      <tr class="border">
+                        <td>
+                         <a href="leg4b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="leg4ic.png" alt="skin4" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; text-align:justify; margin:0; padding:0;padding-left:10px; padding-right:10px;"> <label for="s4">Wounds with primary skin loss and exposing the bone or which require extensive debridement of skin due to friction burns or degloving, demanded specialized plastic surgical skills at the earliest.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="4" id="skin4"/>
+                          &nbsp;
+                          <br>
+							<input id="s4" type="radio" name="skinradio">
+                          </td>
+                      </tr>
+                      <tr class="border" >
+                        <td>
+                          <a href="leg5b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="leg5ic.png" alt="skin5" /> 
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; margin:0; padding:0;padding-left:10px; padding-right:10px;" > <label for="s5">Wounds involving skin loss over the entire circumference of the limb, extensive degloving often present, pose problem in soft tissue reconstruction, huge time is lost, bony reconstruction is often dictated by soft tissue reconstruction.</label></p>
+                                    
+                        </td>
+                        <td align="center" valign="top">&nbsp;
+                            <input type="text"  readonly="true"  style="width:30px; text-align:center" value="5" id="skin5"/>
+                            &nbsp;
+                            <br>
+							<input id="s5" type="radio" name="skinradio">
+                            </td>
+                      </tr>
+                      <tr id="s6" style="visibility:hidden">
+                        <td><div align="justify"><img src="leg5ic.png" alt="skin5" /> </div></td>
+                        <td align="left" valign="top"><p style="cursor:pointer" align="justify; margin:0; padding:0">Circumferetial wound with skin loss -  Wound with Skin Loss </p></td>
+                        <td align="center" valign="top"><div align="justify">&nbsp;
+                            <input type="text"  readonly="true"  style="width:30px; text-align:center" value="5" id="skin5"/>
+                            &nbsp;</div>
+                            
+                            </td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div>
+        <table style="width:100%">
+          <tr>
+            <td align="center" valign="middle" colspan="2" style="width:90%"><h3>Functional tissues (Musculo – Tendinous and Nerve units )</h3></td>
+            <td style="width:10%"><input type="text"  readonly="true"  style="text-align:center" value="0" id="mtnscore"/>
+              &nbsp; </td>
+          </tr>
+          <tr>
+            <td colspan="3"><hr /></td>
+          </tr>
+          <tr>
+            <td align="left" style="padding-left:20px" valign="middle"> Example </td>
+            <td align="center" valign="middle"> Description </td>
+            <td align="center" valign="middle"> Score </td>
+          </tr>
+          <tr>
+            <td colspan="3"><hr /></td>
+          </tr>
+        </table>
+      </div>
+      <div class="swiper-container scroll-container">
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="page-inner">
+              <table  width="100%" align="center">
+                <tr>
+                  <td  width="100%"><table width="100%">
+                      <tr class="border" >
+                        <td>
+                         <a href="mtn/mtn1b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="mtn/mtn1.png" alt="skin1" />
+                        </a>
+                        
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; margin:0; padding:0; margin:0; padding:0; padding-left:10px; padding-right:10px;"><label for="m1">Exposure of MT units without direct damage.</label> </p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="1" id="mtn1"/>
+                          &nbsp;
+                         <br>
+                            <br>
+                          <input id="m1" type="radio" name="mtnradio">
+                          </td>
+                      </tr>
+                      <tr class="border">
+                        <td>
+                         <a href="mtn/mtn2b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="mtn/mtn2.png" alt="skin2" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; margin:0; padding:0;padding-left:10px; padding-right:10px;" ><label for="m2">Repairable injury to MT unit.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="2" id="mtn2"/>
+                          &nbsp;
+                          <br>
+                            <br>
+                          <input  id="m2" type="radio" name="mtnradio">
+                          </td>
+                      </tr>
+                      <tr class="border" >
+                        <td>
+                         <a href="mtn/mtn3b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="mtn/mtn3.png" alt="skin3" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; margin:0; padding:0;padding-left:10px; padding-right:10px;"><label for="m3">Crushing with loss or irreparable damage to MT unit/repairable injury to a nerve.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="3" id="mtn3"/>
+                          &nbsp;
+                           <br>
+                            <br>
+                          <input id="m3" type="radio" name="mtnradio">
+                          </td>
+                      </tr>
+                      <tr class="border" >
+                        <td>
+                        <a href="mtn/mnt4b.png"
+                         target="_self" class="inline-block litebox">
+<img src="mtn/mnt4.png" alt="skin4" />
+</a>
+</td>
+                        <td align="left" valign="top"><p style="cursor:pointer; margin:0; padding:0;padding-left:10px; padding-right:10px;"><label for="m4">Loss of one compartment of MT unit / Irreparable injury to a nerve.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="4" id="mtn4"/>
+                          &nbsp;
+                          
+                           <br>
+                            <br>
+                           
+                          <input id="m4" type="radio" name="mtnradio">
+                          </td>
+                      </tr>
+                      <tr class="border" >
+                        <td>
+                        <a href="mtn/mtn5b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="mtn/mtn5.png" alt="skin5" /> 
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; margin:0; padding:0;padding-left:10px; padding-right:10px;"><label for="m5">Loss of two or more compartment / subtotal amputation.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                            <input type="text"  readonly="true"  style="width:30px; text-align:center" value="5" id="mtn5"/>
+                            &nbsp; <br>
+                            <br>
+                          <input id="m5" type="radio" name="mtnradio"></td>
+                      </tr>
+                      <tr id="m6" style="visibility:hidden">
+                        <td><div align="justify"><img src="leg5ic.png" alt="skin5" /> </div></td>
+                        <td align="left" valign="top"><p style="cursor:pointer" align="justify" >Circumferetial wound with skin loss -  Wound with Skin Loss </p></td>
+                        <td align="center" valign="top"><div align="justify">&nbsp;
+                            <input type="text"  readonly="true"  style="width:30px; text-align:center" value="5" id="skin5"/>
+                            &nbsp;</div></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <table  style="width:100%">
+        <tr>
+          <td align="center" valign="middle" colspan="2" style="width:90%"><h3>Skeletal Structures (Bone and Joints)</h3></td>
+          <td style="width:10%"><input type="text"  readonly="true"  style="text-align:center" value="0" id="bjcore"/>
+            &nbsp; </td>
+        </tr>
+        <tr>
+          <td colspan="3"><hr /></td>
+        </tr>
+        <tr>
+          <td align="left" style="padding-left:20px" valign="middle"> Example </td>
+          <td align="center" valign="middle"> Description </td>
+          <td align="center" valign="middle"> Score </td>
+        </tr>
+        <tr>
+          <td colspan="3"><hr /></td>
+        </tr>
+      </table>
+      <div class="swiper-container scroll-container">
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="page-inner">
+              <table width="100%" align="center">
+                <tr>
+                  <td><table width="100%">
+                      
+                      <tr class="border">
+                        <td>
+                        <a href="bj/bj1b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="bj/bj1.png" alt="skin1" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; text-align:justify; margin:0; padding:0;padding-left:10px; padding-right:10px;"><label for="b1">Transverse or oblique fractures with minimal Periosteal stripping.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="1" id="bj1"/>
+                          &nbsp;
+                          <br>
+                          <br>
+                          <input  id="b1" type="radio" name="bjradio">
+                          </td>
+                      </tr>
+                      <tr class="border" >
+                        <td>
+                        <a href="bj/bj2b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="bj/bj2.png" alt="skin2" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; text-align:justify; margin:0; padding:0;padding-left:10px; padding-right:10px;"><label for="b2">Presence of unicortical comminution</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="2" id="bj2"/>
+                          &nbsp;
+                           <br>
+                          <br>
+                          <input id="b2" type="radio" name="bjradio">
+                          </td>
+                      </tr>
+                      <tr class="border" >
+                        <td>
+                         <a href="bj/bj.3b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="bj/bj.3.png" alt="skin3" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; text-align:justify; margin:0; padding:0;padding-left:10px; padding-right:10px;"><label for="b3">Extensive periarticlular comminution with joint disorganization.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="3" id="bj3"/>
+                          &nbsp;
+                          <br>
+                          <br>
+                          <input id="b3" type="radio" name="bjradio">
+                          </td>
+                      </tr>
+                      <tr class="border" >
+                        <td>
+                         <a href="bj/bj4b.png"
+                         target="_self" class="inline-block litebox">
+                        <img src="bj/bj4.png" alt="skin4" />
+                        </a>
+                        </td>
+                        <td align="left" valign="top"><p style="cursor:pointer; text-align:justify; margin:0; padding:0;padding-left:10px; padding-right:10px;"><label for="b4">Circumferential comminution of bone with or without bone loss of less than 4 cm.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="4" id="bj4"/>
+                          &nbsp;
+                           <br>
+                          <br>
+                          <input id="b4" type="radio" name="bjradio">
+                          </td>
+                      </tr>
+                      <tr class="border">
+                        <td><div align="justify"><img src="bj/bj5.png" alt="skin5" /> </div></td>
+                        <td align="center" valign="top"><p style="cursor:pointer" align="justify; margin:0; padding:0;padding-left:10px; padding-right:10px;" ><label for="b5">Comminuted or segmental fractures with primary or secondary bone loss of more than 4 cm.</label></p></td>
+                        <td align="center" valign="top">&nbsp;
+                            <input type="text"  readonly="true"  style="width:30px; text-align:center" value="5" id="bj5"/>
+                            &nbsp;
+                             <br>
+                          <br>
+                          <input id="b5" type="radio" name="bjradio">
+                            </td>
+                      </tr>
+                      <tr id="b6" style="visibility:hidden">
+                        <td><div align="justify"><img src="leg5ic.png" alt="skin5" /> </div></td>
+                        <td align="left" valign="top"><p style="cursor:pointer" align="justify; margin:0; padding:0;padding-left:10px; padding-right:10px;" ><label id="rbtnbj1">Circumferetial wound with skin loss -  Wound with Skin Loss </p></td>
+                        <td align="center" valign="top"><div align="justify">&nbsp;
+                            <input type="text"  readonly="true"  style="width:30px; text-align:center" value="5" id="skin5"/>
+                            &nbsp;</div></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div>
+        <table style="width:100%">
+          <tr>
+            <td align="center" valign="middle" colspan="2" style="width:90%"><h3>Co-morbid factors influencing outcome(Two points each)</h3>
+             
+              </td>
+            <td style="width:10%"><input type="text"  readonly="true"  style="text-align:center" value="0" id="cmsscore"/>
+              &nbsp; </td>
+          </tr>
+          <tr>
+            <td colspan="3"><hr /></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" colspan="3"> <p style="font-size:15px">Note : Please Tick all Co- morbid facors precent</p> </td>
+          
+          </tr>
+          <tr>
+            <td colspan="3"><hr /></td>
+          </tr>
+        </table>
+      </div>
+      <div class="swiper-container scroll-container">
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="page-inner">
+              <table width="100%"  style="width:100%; height:100%" align="center">
+                <tr>
+                  <td><table width="100%" height="100%">
+                      <tr>
+                        <td>
+                       
+                        <input id="chk1" class="clearbox"  type="checkbox" name="cms"> &nbsp;
+                          <label for="chk1">Delayed presentation (>12 hrs) </label>
+                       
+                          </td>						
+                      </tr>
+                      <tr>
+                      	<td>&nbsp;
+							
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                        
+                        <input id="chk2" class="clearbox" name="cms" type="checkbox">
+                        &nbsp;
+                          <label for="chk2">Sewage or organic contamination / farmyard injuries.</label> <br /></td>
+                      </tr>
+                      <tr>
+                      	<td>&nbsp;
+							
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input id="chk3" class="clearbox" name="cms" type="checkbox">
+                        &nbsp;
+                          <label for="chk3">Debilitating diseases (uncontrolled DM., cardio respiratory diseases.)</label></td>
+                      </tr>
+                      <tr>
+                      	<td>&nbsp;
+							
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input id="chk4" class="clearbox" name="cms" type="checkbox">
+                        &nbsp;
+                          <label for="chk4">Age > 65 years </label></td>
+                      </tr>
+                      <tr>
+                      	<td>&nbsp;
+							
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input id="chk5" class="clearbox" name="cms" type="checkbox">
+                        &nbsp;
+                          <label for="chk5">Associated systemic injuries(polytrauma involving abdominal or chest injuries, ISS >25)</label></td>
+                      </tr>
+                      <tr>
+                      	<td>&nbsp;
+							
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input id="chk6" class="clearbox" name="cms" type="checkbox">
+                        &nbsp;
+                          <label for="chk6">Fat embolism</label></td>
+                      </tr>
+                      <tr>
+                      	<td>&nbsp;
+							
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input id="chk7" class="clearbox" name="cms" type="checkbox">
+                        &nbsp;
+                          <label for="chk7">Another major injury to the same limb / compartment syndrome </label></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div>
+        <table style="width:100%">
+          <tr>
+            <td align="center" valign="middle" colspan="2" style="width:90%"><h3>Final Score Board</h3>
+              <br></td>
+            <td style="width:10%">
+            
+           <label for="myalue" style="vertical-align: middle; visibility:hidden"></label>
+           
+              &nbsp; </td>
+          </tr>
+          <tr>
+            <td colspan="3"><hr /></td>
+          </tr>
+         
+        </table>
+      </div>
+      <div class="swiper-container scroll-container">
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="page-inner">
+              <table align="center">
+                <tr>
+                  <td align="center" valign="middle">
+                  <table align="center">
+                      <tr>
+                        <td align="left" valign="top"><p style="margin:0;padding:0">Covering Tissues  Skin  Score</p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="0" id="skinscorevalue"/>
+                          &nbsp;</td>
+                      </tr>
+                      <tr >
+                        <td align="left" valign="top"><p style="margin:0;padding:0">Muscle, Tendon, Nerves Score </p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center"  value="0" id="mtnscorevalue"/>
+                          &nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><p style="margin:0;padding:0">Bone and Joint score </p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="0" id="bjscorevalue"/>
+                          &nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><p style="margin:0;padding:0">Co-morbid factors influencing outcome </p></td>
+                        <td align="center" valign="top">&nbsp;
+                          <input type="text"  readonly="true"  style="width:30px; text-align:center" value="0" id="cmsscorevalue"/>
+                          &nbsp; <br /></td>
+                      </tr>
+                      <tr>
+                        <td align="center" colspan="2">
+                        
+                        <img id="six" src="img/button1.png" />
+                        <br>
+                        <br>
+                        <br>
+                       <!-- <button  style="width:100px; height:30px;"> Calculate</button> -->
+                       </td>
+                      </tr>
+                    </table></td>
+                    <td align="center" style="padding-left:20px" valign="top">
+                      <div>Score Value</div>	
+                    <p style="color:#06F; font-size:36px; font-family:'Arial Black', Gadget, sans-serif;" id="FinalScorevalue">0</p>
+                    </td>
+                </tr>
+              </table>
+              <div style="text-transform:uppercase; font-weight:bolder">reference</div>
+              
+              <div><hr></div>
+              <!--<div align="center"><img src="FinalScore.png" /></div>-->
+				<div align="center">
+                	<table>
+                    	<tr>
+                        	<td align="left">
+                            	Score < 14  
+                            </td>
+                            <td>
+                            :
+                            </td>
+                            <td align="left">
+                            Limb salvage
+                            </td>
+                           
+                        </tr>
+                       <tr>
+                        	<td align="left">
+                            	Score between 14 to 16  
+                            </td>
+                              <td>
+                            :
+                            </td>
+                            <td align="left">
+                            Grey zone, salvage if good facilities.
+                            </td>
+                           
+                        </tr>
+                       <tr>
+                        	<td align="left">
+                            	Score > 17   
+                            </td>
+                              <td>
+                            :
+                            </td>
+                            <td align="left">
+                            Amputation
+                            </td>
+                           
+                        </tr>
+                    </table>
+                </div>
+              <div><hr></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/idangerous.swiper-2.0.min.js"></script> 
+<script src="js/idangerous.swiper.scrollbar-2.0.js"></script> 
+<script src="js/simple-app.js"></script>
+
+
+</body>
 </html>
